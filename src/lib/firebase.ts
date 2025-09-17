@@ -6,13 +6,12 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, PhoneAuthProvider, s
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC9bvRbYeh5lJd4s8N9vHa_70ykhJfevLQ",
-  authDomain: "northeast-hp.firebaseapp.com",
-  projectId: "northeast-hp",
-  storageBucket: "northeast-hp.firebasestorage.app",
-  messagingSenderId: "870076704961",
-  appId: "1:870076704961:web:542bbb02723146a0e1cc40",
-  measurementId: "G-3M35MTWPBB"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,  // ✅ load from env file
+  authDomain: "your-app.firebaseapp.com",
+  projectId: "your-app-id",
+  storageBucket: "your-app.appspot.com",
+  messagingSenderId: "your-messaging-id",
+  appId: "your-app-id"
 };
 
 // Initialize Firebase
